@@ -52,7 +52,7 @@ const Index = () => {
         </footer>
       </div>
       <div id="myZadarmaCallmeWidget15156"></div>
-      <script>
+      <script dangerouslySetInnerHTML={{ __html: `
         var myZadarmaCallmeWidget15156;
         var myZadarmaCallmeWidgetFn15156 = function() {
           myZadarmaCallmeWidget15156 = new ZadarmaCallmeWidget("myZadarmaCallmeWidget15156");
@@ -85,15 +85,15 @@ const Index = () => {
         } else if (window.attachEvent) {
           window.attachEvent('onload', myZadarmaCallmeWidgetFn15156);
         }
-      </script>
+      `}} />
       <div id="zadarmaScripts"></div>
-      <script>
+      <script dangerouslySetInnerHTML={{ __html: `
         (function() {
           var script = document.createElement('script');
           script.src = 'https://my.zadarma.com/callmewidget/v2.0.9/loader.js';
           document.getElementById('zadarmaScripts').appendChild(script);
         }());
-      </script>
+      `}} />
     </div>
   );
 };
